@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(#FED7B0, #FFFFEE)
+}
+
+.navbar{
+    background:linear-gradient(#0f0101, #080000)
+}
+
+.masthead{
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color:whitesmoke
+}
+
+#watermark{
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.header{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.color-overlay{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#portfoliocards{
+    margin-top: 20px;
+}
+
+
+.card{
+    background: rgba(255, 255, 255, .3);
+    transition: background-color 0.8s ease; /*smooth transition to a diff color*/
+}
+
+.btn{
+    background-color: #0f0101;
+}
+
+#z {
+    width: 720px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.form{
+align-content: center;
+}
+
+#formheader{
+    text-align: center;
+}
+
+#formbtn{
+    background-color: #0f0101;
+    color: #f9dec4;
+}
+
+#nameerror{
+    color: red;
+}
+#emailerror{
+    color:red;
+}
+#messageerror{
+    color: red;
+}
+
