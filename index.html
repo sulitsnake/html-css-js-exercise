@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--external css-->
+    <link rel="stylesheet" href="style.css">
+    
+<title>Portfolio Page</title>
+</head>
+<body>
+    <!--navbar-->
+   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+   <div class="container">
+    <a href="#" class="navbar-brand">My Portfolio</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+</button> <!--Toggles a menu bar when the tab shrinks to a threshold-->
+
+    <div class="collapse navbar-collapse" id="navbar">
+
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"> <!-- Text on navbar -->
+            <a href="#projects" class="nav-link">My projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">ContactMe!</a>
+                        </li>
+            </ul>
+         </div>
+     </div>
+   </nav>
+
+
+<!--masthead-->
+<div 
+class="masthead"
+style="background-image: url('./images/header.jpg')"
+>
+<div class="color-overlay d-flex justify-content-center align-items-center">
+<h1 class="display-6">Welcome to my portfolio!</h1>
+</div>
+<p class="ms-auto mt-auto mb-0 small" id="watermark">image credit: nikita kryukov</p>
+</div>
+
+
+<!-- Homedesc -->
+<section class="header text-dark p-5 text-center">
+    <div class="container">
+        <div>
+            <h1 class="display-6">Three projects I work on</h1>
+        </div>
+    </div>
+</section>
+
+
+
+<!--portfolio section-->
+<div class="container" id="portfoliocards">
+<div class="row gy-2">
+    <!--card 1-->
+    <div class="col-md-4">
+        <div class="card" id="card1" style="width: 18rem;">
+            <img src="images/cctvproj.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Smart CCTV project</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1">More info</button>
+            </div>
+          </div>
+    </div>
+    <!--card 2-->
+    <div class="col-md-4">
+        <div class="card" id="card2" style="width: 18rem;">
+            <img src="images/proj2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Face study</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2">More Info</button>
+            </div>
+          </div>
+    </div>
+    <!--card 3-->
+    <div class="col-md-4">
+        <div class="card" id="card3" style="width: 18rem;">
+            <img src="images/sketch.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Sketch WIP</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3">More Info</button>
+            </div>
+          </div>
+    </div>
+</div>
+  </div>
+
+
+
+  <!-- Modals -->
+
+  <!--modal 1-->
+  <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Project 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/cctvproj.png" class="card-img-top" alt="...">
+          This is a sample UI for a smart CCTV system.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal 2-->
+  <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Project 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img src="images/proj2.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="d-flex justify-content">
+          This is a face study I did two weeks ago, the reference it is based on is a controversial one but I chose it because the lighting allowed me to "feel" around the basic planes and muscles in the human face and what should be in light and what is not. I forgot to paint the right ear.
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <!--modal 3-->
+      <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Project 3</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <img src="images/sketch.png" class="card-img-top" alt="...">
+              </div>
+              <div class="d-flex justify-content">
+              A sketch I am making. She has no hair at the moment
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+
+          <!--form-->
+          <div class="container" id="z">
+          <form class="form" id = "form">
+              <h2 id="formheader">Get in touch</h2>
+              <label for "name">Name</label>
+              <input type="text" class = "form-control" id = "namebox" placeholder = "Name">
+              <span id="nameerror"></span>
+
+              <div class = "mb-3">
+              <label for "email">Email address</label> 
+              <input type="email" class = "form-control" id="email" placeholder = "Email address" >
+               <span id="emailerror"></span>
+            </div>
+
+              <div class="mb-3">
+                <label for "message"> Message </label>
+                <textarea type = "text" class = "form-control" id="message" placeholder="Message" ></textarea>
+             <span id="messageerror"></span>
+              </div>
+              <button type="submit" id="formbtn">Submit</button>
+            </form>
+          </div>
+
+          <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
